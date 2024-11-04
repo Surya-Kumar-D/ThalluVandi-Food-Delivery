@@ -1,0 +1,318 @@
+[
+  {
+    "id": 1,
+    "name": "Parotta",
+    "description": "Flaky and soft layered flatbread, a South Indian classic often paired with salna (curry).",
+    "ingredients": ["Maida (all-purpose flour)", "Water", "Salt", "Oil"],
+    "price": 20,
+    "category": "Bread",
+    "spicyLevel": "Low",
+    "availability": true,
+    "imageUrl": "https://example.com/images/parotta.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Kothu Parotta",
+    "description": "Chopped parotta mixed with eggs, vegetables, and spicy gravy, cooked on a hot iron skillet.",
+    "ingredients": [
+      "Parotta",
+      "Eggs",
+      "Onions",
+      "Tomatoes",
+      "Green chilies",
+      "Garam masala",
+      "Salna (curry base)"
+    ],
+    "price": 80,
+    "category": "Main Course",
+    "spicyLevel": "High",
+    "availability": true,
+    "imageUrl": "https://example.com/images/kothu-parotta.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Chicken Salna",
+    "description": "A flavorful chicken curry made with aromatic spices, perfect for pairing with parotta or rice.",
+    "ingredients": [
+      "Chicken",
+      "Onions",
+      "Tomatoes",
+      "Ginger garlic paste",
+      "Spices (coriander, cumin, chili powder)",
+      "Coconut milk"
+    ],
+    "price": 120,
+    "category": "Gravy",
+    "spicyLevel": "Medium",
+    "availability": true,
+    "imageUrl": "https://example.com/images/chicken-salna.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Idiyappam",
+    "description": "String hoppers made from rice flour, soft and delicate, often served with coconut milk or salna.",
+    "ingredients": ["Rice flour", "Water", "Salt"],
+    "price": 30,
+    "category": "Bread",
+    "spicyLevel": "None",
+    "availability": true,
+    "imageUrl": "https://example.com/images/idiyappam.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Mutton Chukka",
+    "description": "Spicy, dry-roasted mutton cooked with a blend of traditional spices and served as a starter or side dish.",
+    "ingredients": [
+      "Mutton",
+      "Onions",
+      "Curry leaves",
+      "Ginger garlic paste",
+      "Spices (fennel, black pepper, chili powder)"
+    ],
+    "price": 180,
+    "category": "Starter",
+    "spicyLevel": "High",
+    "availability": false,
+    "imageUrl": "https://example.com/images/mutton-chukka.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Egg Dosa",
+    "description": "Crispy dosa topped with egg, seasoned with pepper and served with chutney and sambar.",
+    "ingredients": ["Dosa batter", "Egg", "Pepper", "Salt", "Oil"],
+    "price": 50,
+    "category": "Main Course",
+    "spicyLevel": "Low",
+    "availability": true,
+    "imageUrl": "https://example.com/images/egg-dosa.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Veechu Parotta",
+    "description": "Thin, hand-stretched parotta, soft and delicious, often enjoyed with spicy curry or kurma.",
+    "ingredients": ["Maida (all-purpose flour)", "Water", "Salt", "Oil"],
+    "price": 25,
+    "category": "Bread",
+    "spicyLevel": "None",
+    "availability": true,
+    "imageUrl": "https://example.com/images/veechu-parotta.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Fish Fry",
+    "description": "Crispy and spicy fried fish marinated in South Indian spices, a perfect side dish or starter.",
+    "ingredients": [
+      "Fish",
+      "Chili powder",
+      "Turmeric",
+      "Lemon juice",
+      "Salt",
+      "Rice flour"
+    ],
+    "price": 150,
+    "category": "Starter",
+    "spicyLevel": "Medium",
+    "availability": true,
+    "imageUrl": "https://example.com/images/fish-fry.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Podi Idli",
+    "description": "Soft idlis coated with spicy podi (powdered lentils and spices), perfect for a quick snack.",
+    "ingredients": ["Idli batter", "Podi (lentil spice mix)", "Ghee or oil"],
+    "price": 40,
+    "category": "Snack",
+    "spicyLevel": "Medium",
+    "availability": true,
+    "imageUrl": "https://example.com/images/podi-idli.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Chicken 65",
+    "description": "Crispy, deep-fried spicy chicken bites marinated with a blend of yogurt and South Indian spices.",
+    "ingredients": [
+      "Chicken",
+      "Yogurt",
+      "Ginger garlic paste",
+      "Red chili powder",
+      "Curry leaves",
+      "Corn flour"
+    ],
+    "price": 150,
+    "category": "Starter",
+    "spicyLevel": "High",
+    "availability": true,
+    "imageUrl": "https://example.com/images/chicken-65.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Sambar Rice",
+    "description": "A comforting South Indian dish made with rice, mixed vegetables, and aromatic sambar.",
+    "ingredients": [
+      "Rice",
+      "Toor dal",
+      "Mixed vegetables",
+      "Tamarind",
+      "Sambar powder",
+      "Mustard seeds"
+    ],
+    "price": 70,
+    "category": "Main Course",
+    "spicyLevel": "Medium",
+    "availability": true,
+    "imageUrl": "https://example.com/images/sambar-rice.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Rasam",
+    "description": "A tangy and spicy South Indian soup made with tamarind, tomatoes, and spices, served as a starter or with rice.",
+    "ingredients": [
+      "Tamarind",
+      "Tomatoes",
+      "Black pepper",
+      "Cumin",
+      "Garlic",
+      "Curry leaves"
+    ],
+    "price": 30,
+    "category": "Soup",
+    "spicyLevel": "High",
+    "availability": true,
+    "imageUrl": "https://example.com/images/rasam.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Mushroom Pepper Fry",
+    "description": "A spicy and flavorful dish made with mushrooms, black pepper, and aromatic spices, perfect as a side or snack.",
+    "ingredients": [
+      "Mushrooms",
+      "Black pepper",
+      "Onions",
+      "Garlic",
+      "Curry leaves",
+      "Capsicum"
+    ],
+    "price": 110,
+    "category": "Side Dish",
+    "spicyLevel": "Medium",
+    "availability": false,
+    "imageUrl": "https://example.com/images/mushroom-pepper-fry.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Prawn Thokku",
+    "description": "A spicy and tangy prawn curry made with tomatoes and a rich blend of South Indian spices.",
+    "ingredients": [
+      "Prawns",
+      "Tomatoes",
+      "Onions",
+      "Ginger garlic paste",
+      "Spices (chili powder, turmeric, coriander powder)"
+    ],
+    "price": 200,
+    "category": "Gravy",
+    "spicyLevel": "High",
+    "availability": true,
+    "imageUrl": "https://example.com/images/prawn-thokku.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Onion Uttapam",
+    "description": "Thick, fluffy uttapam topped with caramelized onions and green chilies, served with chutney and sambar.",
+    "ingredients": [
+      "Uttapam batter",
+      "Onions",
+      "Green chilies",
+      "Coriander leaves",
+      "Oil"
+    ],
+    "price": 50,
+    "category": "Breakfast",
+    "spicyLevel": "Low",
+    "availability": true,
+    "imageUrl": "https://example.com/images/onion-uttapam.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Pongal",
+    "description": "A savory rice and lentil dish tempered with black pepper, cumin, and ghee, served with chutney and sambar.",
+    "ingredients": [
+      "Rice",
+      "Moong dal",
+      "Black pepper",
+      "Cumin seeds",
+      "Ghee",
+      "Cashews"
+    ],
+    "price": 60,
+    "category": "Breakfast",
+    "spicyLevel": "Low",
+    "availability": true,
+    "imageUrl": "https://example.com/images/pongal.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Masala Dosa",
+    "description": "Crispy dosa stuffed with a spiced potato filling, served with coconut chutney and sambar.",
+    "ingredients": [
+      "Dosa batter",
+      "Potatoes",
+      "Onions",
+      "Green chilies",
+      "Mustard seeds",
+      "Curry leaves"
+    ],
+    "price": 60,
+    "category": "Breakfast",
+    "spicyLevel": "Medium",
+    "availability": true,
+    "imageUrl": "https://example.com/images/masala-dosa.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Vadai",
+    "description": "Crispy deep-fried lentil fritters, perfect as a snack or served with coconut chutney and sambar.",
+    "ingredients": [
+      "Urad dal",
+      "Onions",
+      "Green chilies",
+      "Curry leaves",
+      "Salt",
+      "Oil"
+    ],
+    "price": 20,
+    "category": "Snack",
+    "spicyLevel": "Medium",
+    "availability": true,
+    "imageUrl": "https://example.com/images/vadai.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Chettinad Chicken Curry",
+    "description": "A spicy and aromatic chicken curry made with freshly ground Chettinad spices and coconut.",
+    "ingredients": [
+      "Chicken",
+      "Onions",
+      "Tomatoes",
+      "Coconut",
+      "Chettinad spice mix",
+      "Curry leaves"
+    ],
+    "price": 180,
+    "category": "Gravy",
+    "spicyLevel": "High",
+    "availability": false,
+    "imageUrl": "https://example.com/images/chettinad-chicken-curry.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Ragi Mudde",
+    "description": "Traditional finger millet balls served with spicy sambar or curry, a nutritious and filling meal.",
+    "ingredients": ["Ragi flour", "Water", "Salt"],
+    "price": 40,
+    "category": "Main Course",
+    "spicyLevel": "None",
+    "availability": true,
+    "imageUrl": "https://example.com/images/ragi-mudde.jpg"
+  }
+]
