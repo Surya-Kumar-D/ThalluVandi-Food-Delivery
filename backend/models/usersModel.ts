@@ -1,14 +1,6 @@
 import mongoose, { Document } from "mongoose";
 import validator from "validator";
-
-type Iuser = Document & {
-  name: string;
-  email: string;
-  slug: string;
-  role: "customer" | "admin";
-  password: string;
-  passwordConfirm: string;
-};
+import { type Iuser } from "../types/types.ts";
 
 const userSchema = new mongoose.Schema<Iuser>({
   name: {
@@ -20,6 +12,8 @@ const userSchema = new mongoose.Schema<Iuser>({
     type: String,
     required: [true, "Email is required"],
     validate: [validator.isEmail, "Please provide the valid email"],
+    unique: true,
+    lowercase: true,
   },
   role: {
     type: String,
