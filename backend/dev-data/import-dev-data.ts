@@ -26,7 +26,6 @@
 // export const importData = async () => {
 //   try {
 //     await Item.create(items);
-//     cl
 //   } catch (err) {
 //     console.log(err);
 //   }

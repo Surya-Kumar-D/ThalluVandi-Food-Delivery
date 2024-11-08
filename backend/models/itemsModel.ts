@@ -7,7 +7,7 @@ const itemSchema = new mongoose.Schema({
   ingredients: Array,
   price: Number,
   category: String,
-  spiceLevel: String,
+  spicyLevel: String,
   availability: Boolean,
   imageUrl: String,
 });

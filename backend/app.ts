@@ -6,9 +6,11 @@ import express, {
 } from "express";
 import itemsRouter from "./routes/itemsRoutes.ts";
 import usersRouter from "./routes/usersRoutes.ts";
+import cors from "cors";
 import AppError from "./utils/appError.ts";
-const app = express();
 
+const app = express();
+app.use(cors());
 const errorHandler: ErrorRequestHandler = (
   err: AppError,
   req: Request,

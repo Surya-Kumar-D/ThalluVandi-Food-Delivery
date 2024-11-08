@@ -8,7 +8,7 @@
     "category": "Bread",
     "spicyLevel": "Low",
     "availability": true,
-    "imageUrl": "https://example.com/images/parotta.jpg"
+    "imageUrl": "parotta.jpg"
   },
   {
     "id": 2,
@@ -27,7 +27,7 @@
     "category": "Main Course",
     "spicyLevel": "High",
     "availability": true,
-    "imageUrl": "https://example.com/images/kothu-parotta.jpg"
+    "imageUrl": "kothu-parotta-1.jpg"
   },
   {
     "id": 3,
@@ -45,7 +45,7 @@
     "category": "Gravy",
     "spicyLevel": "Medium",
     "availability": true,
-    "imageUrl": "https://example.com/images/chicken-salna.jpg"
+    "imageUrl": "chicken-salna.jpg"
   },
   {
     "id": 4,
@@ -56,7 +56,7 @@
     "category": "Bread",
     "spicyLevel": "None",
     "availability": true,
-    "imageUrl": "https://example.com/images/idiyappam.jpg"
+    "imageUrl": "idiyappam.webp"
   },
   {
     "id": 5,
@@ -73,7 +73,7 @@
     "category": "Starter",
     "spicyLevel": "High",
     "availability": false,
-    "imageUrl": "https://example.com/images/mutton-chukka.jpg"
+    "imageUrl": "mutton-chukka.webp"
   },
   {
     "id": 6,
@@ -84,7 +84,7 @@
     "category": "Main Course",
     "spicyLevel": "Low",
     "availability": true,
-    "imageUrl": "https://example.com/images/egg-dosa.jpg"
+    "imageUrl": "egg-dosa.jpg"
   },
   {
     "id": 7,
@@ -95,7 +95,7 @@
     "category": "Bread",
     "spicyLevel": "None",
     "availability": true,
-    "imageUrl": "https://example.com/images/veechu-parotta.jpg"
+    "imageUrl": "Veechu_Parotta.jpg"
   },
   {
     "id": 8,
@@ -113,7 +113,7 @@
     "category": "Starter",
     "spicyLevel": "Medium",
     "availability": true,
-    "imageUrl": "https://example.com/images/fish-fry.jpg"
+    "imageUrl": "fish-curry.jpg"
   },
   {
     "id": 9,
@@ -124,7 +124,7 @@
     "category": "Snack",
     "spicyLevel": "Medium",
     "availability": true,
-    "imageUrl": "https://example.com/images/podi-idli.jpg"
+    "imageUrl": "podi-idli.jpg"
   },
   {
     "id": 10,
@@ -142,7 +142,7 @@
     "category": "Starter",
     "spicyLevel": "High",
     "availability": true,
-    "imageUrl": "https://example.com/images/chicken-65.jpg"
+    "imageUrl": "Chicken-65-Spicy-Crispy.jpg"
   },
   {
     "id": 11,
@@ -160,7 +160,7 @@
     "category": "Main Course",
     "spicyLevel": "Medium",
     "availability": true,
-    "imageUrl": "https://example.com/images/sambar-rice.jpg"
+    "imageUrl": "sambar-rice.jpg"
   },
   {
     "id": 12,
@@ -178,7 +178,7 @@
     "category": "Soup",
     "spicyLevel": "High",
     "availability": true,
-    "imageUrl": "https://example.com/images/rasam.jpg"
+    "imageUrl": "rasamjpg"
   },
   {
     "id": 13,
@@ -196,7 +196,7 @@
     "category": "Side Dish",
     "spicyLevel": "Medium",
     "availability": false,
-    "imageUrl": "https://example.com/images/mushroom-pepper-fry.jpg"
+    "imageUrl": "mushroom-pepper-fry.jpeg"
   },
   {
     "id": 14,
@@ -213,7 +213,7 @@
     "category": "Gravy",
     "spicyLevel": "High",
     "availability": true,
-    "imageUrl": "https://example.com/images/prawn-thokku.jpg"
+    "imageUrl": "PrawnMasala-3.jpg"
   },
   {
     "id": 15,
@@ -230,7 +230,7 @@
     "category": "Breakfast",
     "spicyLevel": "Low",
     "availability": true,
-    "imageUrl": "https://example.com/images/onion-uttapam.jpg"
+    "imageUrl": "onion-uttapam-main.jpg"
   },
   {
     "id": 16,
@@ -248,7 +248,7 @@
     "category": "Breakfast",
     "spicyLevel": "Low",
     "availability": true,
-    "imageUrl": "https://example.com/images/pongal.jpg"
+    "imageUrl": "mamispongal.jpg"
   },
   {
     "id": 17,
@@ -266,7 +266,7 @@
     "category": "Breakfast",
     "spicyLevel": "Medium",
     "availability": true,
-    "imageUrl": "https://example.com/images/masala-dosa.jpg"
+    "imageUrl": "masala-dosa-2.jpg"
   },
   {
     "id": 18,
@@ -284,7 +284,7 @@
     "category": "Snack",
     "spicyLevel": "Medium",
     "availability": true,
-    "imageUrl": "https://example.com/images/vadai.jpg"
+    "imageUrl": "vadai.jpg"
   },
   {
     "id": 19,
@@ -302,7 +302,7 @@
     "category": "Gravy",
     "spicyLevel": "High",
     "availability": false,
-    "imageUrl": "https://example.com/images/chettinad-chicken-curry.jpg"
+    "imageUrl": "chicken-curry.jpg"
   },
   {
     "id": 20,
@@ -313,6 +313,6 @@
     "category": "Main Course",
     "spicyLevel": "None",
     "availability": true,
-    "imageUrl": "https://example.com/images/ragi-mudde.jpg"
+    "imageUrl": "ragi-mudde.jpg"
   }
 ]
