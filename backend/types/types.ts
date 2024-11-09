@@ -14,6 +14,7 @@ export type Dish = {
   name: string;
   description: string;
   ingredients: string[];
+  slug: string;
   price: number;
   category: string;
   spicyLevel: string;

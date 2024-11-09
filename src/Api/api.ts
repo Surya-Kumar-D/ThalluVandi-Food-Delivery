@@ -18,3 +18,14 @@ export const getAlldishes = async (): Promise<Dish[] | undefined> => {
     console.log(err);
   }
 };
+
+export const getDish = async (
+  slug: string | undefined
+): Promise<Dish[] | undefined> => {
+  try {
+    const res = await api.get(`/api/v1/items/${slug}`);
+    return res.data.data;
+  } catch (err) {
+    console.log(err);
+  }
+};

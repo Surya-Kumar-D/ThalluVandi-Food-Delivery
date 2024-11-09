@@ -6,8 +6,9 @@
 }
 
 body {
-  @apply text-base font-sans;
+  @apply font-sans text-base;
   font-size: 10px;
+  background-color: #faf6e3;
 }
 
 @tailwind components;
@@ -33,7 +34,7 @@ body {
   font-weight: 300;
   font-style: normal;
 }
-
+/* FAF6E3 */
 .dish-container {
   @apply h-[400px] w-[300px];
 }
@@ -42,10 +43,10 @@ body {
 }
 
 .dish-image {
-  @apply h-[60%] w-full;
+  @apply h-[60%] w-full relative;
 }
 .dish-image img {
-  @apply w-full h-full object-cover rounded-t-2xl;
+  @apply object-cover w-full h-full rounded-t-2xl;
 }
 
 .dish-category {
@@ -65,9 +66,24 @@ body {
 }
 
 .dish-cart {
-  @apply flex justify-center items-center py-2 gap-3 cursor-pointer border rounded-2xl;
+  @apply flex items-center justify-center gap-3 py-2 border cursor-pointer rounded-2xl;
 }
 
 .dish-cart p {
   @apply text-center;
+}
+
+.item-container {
+  @apply bg-[#FAF6E3] w-[1000px]  px-[10rem] flex flex-col text-start text-[1rem] gap-5;
+}
+
+.item-image {
+  @apply h-auto w-[450px] self-center;
+}
+.item-image img {
+  @apply w-full h-full rounded-xl;
+}
+
+.item-flex {
+  @apply flex items-center gap-1;
 }

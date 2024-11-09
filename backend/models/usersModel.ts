@@ -1,4 +1,4 @@
-import mongoose, { Document } from "mongoose";
+import mongoose from "mongoose";
 import validator from "validator";
 import { type Iuser } from "../types/types.ts";
 
@@ -7,7 +7,7 @@ const userSchema = new mongoose.Schema<Iuser>({
     type: String,
     required: [true, "User name is requried"],
   },
-  slug: String,
+
   email: {
     type: String,
     required: [true, "Email is required"],

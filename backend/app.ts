@@ -10,6 +10,9 @@ import cors from "cors";
 import AppError from "./utils/appError.ts";
 
 const app = express();
+
+app.use(express.json({ limit: "10kb" }));
+
 app.use(cors());
 const errorHandler: ErrorRequestHandler = (
   err: AppError,
@@ -17,7 +20,6 @@ const errorHandler: ErrorRequestHandler = (
   res: Response,
   next: NextFunction
 ) => {
-  console.log(err);
   res.status(err.status || 500).json({
     status: "error",
     message: err.message || "Internal Server Error",
