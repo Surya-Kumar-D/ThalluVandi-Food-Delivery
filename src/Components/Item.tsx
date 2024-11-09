@@ -37,12 +37,12 @@ function Item() {
   } = data[0];
 
   return (
-    <div className="flex items-center justify-center w-full h-full">
-      <div className="item-container">
+    <div className="flex items-center justify-center w-full h-full ">
+      <div className="item-container [&>*]:text-[1.2rem]">
         <div className="item-image">
           <img src={`/img/dishes/${imageUrl}`} alt={name} />
         </div>
-        <p className="item-flex">
+        <p className="item-flex ">
           <MdFoodBank />
           Name: {name}
         </p>
@@ -50,9 +50,9 @@ function Item() {
           <TbCategory />
           Category: {category}
         </p>
-        <p className="item-flex">
+        <p className="flex items-start justify-center max-w-[1000px] gap-2">
           <CgDetailsMore />
-          Descriptiion: {description}
+          <p>Descriptiion: {description}</p>
         </p>
         <p className="item-flex">
           <GiOpenedFoodCan /> Ingredients:

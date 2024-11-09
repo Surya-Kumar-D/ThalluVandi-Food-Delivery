@@ -14,9 +14,9 @@ const itemSchema = new mongoose.Schema<Dish>({
   imageUrl: String,
 });
 
-itemSchema.pre("save", function (next) {
-  this.slug = slugify(this.name, { lower: true });
-  next();
-});
+// itemSchema.pre("save", function (next) {
+//   this.slug = slugify(this.name, { lower: true });
+//   next();
+// });
 
 export default mongoose.model("Item", itemSchema);

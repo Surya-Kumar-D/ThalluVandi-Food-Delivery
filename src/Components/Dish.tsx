@@ -4,6 +4,7 @@ import { getAlldishes } from "../Api/api";
 import { type Dish as DishType } from "../../backend/types/types";
 import { Link } from "react-router-dom";
 import { HashLoader } from "react-spinners";
+import useStore from "../store/store";
 
 interface DishItemProps {
   dish: DishType;
@@ -12,6 +13,8 @@ interface DishItemProps {
 
 getAlldishes();
 const Dish: React.FC<DishItemProps> = ({ dish, isLoading }) => {
+  const addToCart = useStore((state) => state.addToCart);
+  const totalAmount = useStore((state) => state.totalAmount);
   return (
     <div className="dish-container">
       {isLoading ? (
@@ -36,10 +39,11 @@ const Dish: React.FC<DishItemProps> = ({ dish, isLoading }) => {
                 : "🌶️"}
             </p>
           </div>
-          <div className="dish-cart">
+          <div className="dish-cart" onClick={() => addToCart(dish)}>
             <ShoppingCart />
             <p>Add to Cart</p>
           </div>
+          <p>Total Amount: {totalAmount}</p>
         </>
       )}
     </div>
