@@ -7,30 +7,36 @@ export const EmptyCart = ({ dish }: { dish: Dish }) => {
   const addToCart = useStore((state) => state.addToCart);
   return (
     <div className="dish-cart" onClick={() => addToCart(dish)}>
-      <ShoppingCart />
+      <button>
+        <ShoppingCart />
+      </button>
       <p>Add to Cart</p>
     </div>
   );
 };
 
 type CartProps = {
-  name: string;
   itemId: number;
+  total: number;
 };
 
-export const AddAndRemoveCart = ({ name, itemId }: CartProps) => {
+export const AddAndRemoveCart = ({ itemId, total }: CartProps) => {
   const addItem = useStore((state) => state.addItem);
   const removeItem = useStore((state) => state.removeItem);
   return (
     <div className="dish-cart group">
-      <Plus onClick={() => addItem(itemId)} />
-      <p className="group-hover:scale-125 group-hover:mx-5 group-hover:text-[#faf6e3] group-hover:text-[1.1rem] font-bold duration-[.6s] ease-in-out transition-transform ">
-        {name}
+      <button>
+        <Plus onClick={() => addItem(itemId)} />
+      </button>
+      <p className="group-hover:scale-125  mx-6 text-[.9rem] group-hover:text-[#faf6e3] group-hover:text-[1.1rem] font-bold duration-[.6s] ease-in-out transition-transform ">
+        {total}
       </p>
-      <Minus
-        // className="border border-white rounded-full"
-        onClick={() => removeItem(itemId)}
-      />
+      <button>
+        <Minus
+          // className="border border-white rounded-full"
+          onClick={() => removeItem(itemId)}
+        />
+      </button>
     </div>
   );
 };

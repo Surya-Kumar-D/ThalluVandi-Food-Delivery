@@ -10,21 +10,24 @@ import { GiOpenedFoodCan } from "react-icons/gi";
 import { SiLevelsdotfyi } from "react-icons/si";
 import { IoMdPricetags } from "react-icons/io";
 import { HashLoader } from "react-spinners";
+import { AddAndRemoveCart, EmptyCart } from "./Cart";
+import useStore from "../store/store";
 
 function Item() {
-  const { slug } = useParams();
+  const { slug: searchParam } = useParams();
   const { data, isLoading, isError, error } = useQuery({
-    queryKey: ["item", slug],
-    queryFn: () => getDish(slug),
+    queryKey: ["item", searchParam],
+    queryFn: () => getDish(searchParam),
   });
+  const items = useStore((state) => state.Dish);
   if (isLoading)
     return (
       <div className="flex items-center justify-center h-screen">
         <HashLoader />
       </div>
     );
-  console.log(data);
   const {
+    slug,
     availability,
     category,
     description,
@@ -36,6 +39,8 @@ function Item() {
     spicyLevel,
   } = data[0];
 
+  const dishInCart = items.find((item) => item.id === id);
+  const total: number = dishInCart ? dishInCart.total : 0;
   return (
     <div className="flex items-center justify-center w-full h-full ">
       <div className="item-container [&>*]:text-[1.2rem]">
@@ -69,10 +74,25 @@ function Item() {
         <p className="item-flex">
           <IoMdPricetags /> Price: ₹{`${price}`}
         </p>
-        <div className="dish-cart">
-          <ShoppingCart />
-          <p>Add to Cart</p>
-        </div>
+        {items.some((item) => item.id === id) ? (
+          <AddAndRemoveCart itemId={id} total={total} />
+        ) : (
+          <EmptyCart
+            dish={{
+              id,
+              name,
+              price,
+              category,
+              imageUrl,
+              total,
+              spicyLevel,
+              ingredients,
+              availability,
+              description,
+              slug,
+            }}
+          />
+        )}
       </div>
     </div>
   );

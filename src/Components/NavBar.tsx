@@ -1,8 +1,10 @@
 import { ShoppingCartIcon } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import useStore from "../store/store";
 function NavBar() {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
+  const totalItems = useStore((state) => state.totalItems);
   const { slug } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -45,8 +47,11 @@ function NavBar() {
             Login
           </button>
         </Link>
-        <Link to={"#"}>
-          <ShoppingCartIcon />
+        <Link to={"#"} className="relative">
+          <ShoppingCartIcon className="text-[#968f68]  box-content px-4 py-2 bg-white rounded-2xl" />
+          <span className="text-[1.3rem] text-[#968f68] absolute top-[25px] left-[40px] font-bold z-10">
+            {totalItems && totalItems > 0 ? totalItems : ""}
+          </span>
         </Link>
       </div>
     </nav>

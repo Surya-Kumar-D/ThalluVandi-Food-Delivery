@@ -1,4 +1,3 @@
-import { ShoppingCart } from "lucide-react";
 import React from "react";
 import { getAlldishes } from "../Api/api";
 
@@ -18,7 +17,9 @@ const Dish: React.FC<DishItemProps> = ({ dish, isLoading }) => {
   const addToCart = useStore((state) => state.addToCart);
   const totalAmount = useStore((state) => state.totalAmount);
   const items = useStore((state) => state.Dish);
-  console.log(items);
+  const dishInCart = items.find((item) => item.id === dish.id);
+  const total: number = dishInCart ? dishInCart.total : 0;
+
   return (
     <div className="dish-container">
       {isLoading ? (
@@ -45,7 +46,7 @@ const Dish: React.FC<DishItemProps> = ({ dish, isLoading }) => {
           </div>
 
           {items.some((item) => item.id === dish.id) ? (
-            <AddAndRemoveCart name={dish.name} itemId={dish.id} />
+            <AddAndRemoveCart itemId={dish.id} total={total} />
           ) : (
             <EmptyCart dish={dish} />
           )}

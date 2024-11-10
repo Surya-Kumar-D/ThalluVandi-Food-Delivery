@@ -9,5 +9,5 @@ export type Dish = {
   spicyLevel: string;
   availability: boolean;
   imageUrl: string;
-  total: number;
+  total?: number;
 };
