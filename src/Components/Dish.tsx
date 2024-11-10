@@ -1,10 +1,12 @@
 import { ShoppingCart } from "lucide-react";
 import React from "react";
 import { getAlldishes } from "../Api/api";
-import { type Dish as DishType } from "../../backend/types/types";
+
 import { Link } from "react-router-dom";
 import { HashLoader } from "react-spinners";
 import useStore from "../store/store";
+import { Dish as DishType } from "../types/Dish";
+import { AddAndRemoveCart, EmptyCart } from "./Cart";
 
 interface DishItemProps {
   dish: DishType;
@@ -15,6 +17,8 @@ getAlldishes();
 const Dish: React.FC<DishItemProps> = ({ dish, isLoading }) => {
   const addToCart = useStore((state) => state.addToCart);
   const totalAmount = useStore((state) => state.totalAmount);
+  const items = useStore((state) => state.Dish);
+  console.log(items);
   return (
     <div className="dish-container">
       {isLoading ? (
@@ -39,10 +43,13 @@ const Dish: React.FC<DishItemProps> = ({ dish, isLoading }) => {
                 : "🌶️"}
             </p>
           </div>
-          <div className="dish-cart" onClick={() => addToCart(dish)}>
-            <ShoppingCart />
-            <p>Add to Cart</p>
-          </div>
+
+          {items.some((item) => item.id === dish.id) ? (
+            <AddAndRemoveCart name={dish.name} itemId={dish.id} />
+          ) : (
+            <EmptyCart dish={dish} />
+          )}
+
           <p>Total Amount: {totalAmount}</p>
         </>
       )}

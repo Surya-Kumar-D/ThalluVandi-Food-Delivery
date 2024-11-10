@@ -55,8 +55,13 @@ export const cartSlice: StateCreator<
   removeItem: (dishId: number) =>
     set((state) => {
       const item = state.Dish.find((dish) => dish.id === dishId);
-      if (item) {
+
+      if (item && item.total > 1) {
         item.total -= 1;
+        state.totalAmount -= item.price;
+        state.totalItems -= 1;
+      } else if (item && item.total === 1) {
+        state.Dish = state.Dish.filter((dish) => dish.id !== dishId);
         state.totalAmount -= item.price;
         state.totalItems -= 1;
       }

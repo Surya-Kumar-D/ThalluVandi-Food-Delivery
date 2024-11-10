@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import slugify from "slugify";
+import * as slugy from "slugify";
 import { Dish } from "../types/types.ts";
 const itemSchema = new mongoose.Schema<Dish>({
   id: Number,
@@ -14,8 +14,8 @@ const itemSchema = new mongoose.Schema<Dish>({
   imageUrl: String,
 });
 
-// itemSchema.pre("save", function (next) {
-//   this.slug = slugify(this.name, { lower: true });
+// itemSchema.pre("save", async function (next) {
+//   this.slug = slugy(this.name, { lower: true });
 //   next();
 // });
 
