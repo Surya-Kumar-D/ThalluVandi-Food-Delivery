@@ -1,3 +1,4 @@
+import { ShoppingCartIcon } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 function NavBar() {
@@ -43,6 +44,9 @@ function NavBar() {
           <button className="px-4 py-2 bg-white rounded-2xl text-[#968f68]">
             Login
           </button>
+        </Link>
+        <Link to={"#"}>
+          <ShoppingCartIcon />
         </Link>
       </div>
     </nav>
