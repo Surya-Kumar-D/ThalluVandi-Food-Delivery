@@ -4,6 +4,7 @@ import { type Dish as DishType } from "./types/Dish";
 import { useQuery } from "@tanstack/react-query";
 import { getAlldishes } from "./Api/api";
 import { HashLoader } from "react-spinners";
+import Images from "./Components/Images";
 
 function App() {
   const { data, error, isLoading } = useQuery({
@@ -33,6 +34,7 @@ function App() {
     );
   return (
     <>
+      <Images />
       <div className="flex justify-between items-center  px-[5.5rem]">
         <p className="text-[1.2rem] font-bold">{filter}</p>
         <div className="flex items-center justify-center gap-5">
