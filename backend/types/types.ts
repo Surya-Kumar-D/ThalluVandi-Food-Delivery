@@ -7,6 +7,7 @@ export type Iuser = Document & {
   role?: "customer" | "admin";
   password: string;
   passwordConfirm: string;
+  photo?: string;
 };
 
 export type Dish = {

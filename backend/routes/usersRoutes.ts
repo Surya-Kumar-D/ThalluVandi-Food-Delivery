@@ -1,9 +1,16 @@
 import express from "express";
-import { createUsers, getAllUsers } from "../controllers/usersController.ts";
+import {
+  checkAuth,
+  createUsers,
+  getAllUsers,
+  loginUser,
+} from "../controllers/usersController.ts";
 
 const router = express.Router();
 
 router.route("/").get(getAllUsers);
-router.route("/").post(createUsers);
-
+router.route("/signup").post(createUsers);
+router.route("/login").post(loginUser);
+// @ts-ignore
+router.route("/check").get(checkAuth);
 export default router;
